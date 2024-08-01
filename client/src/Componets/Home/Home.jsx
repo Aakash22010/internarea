@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 function Home() {
     const { t } = useTranslation()
-    const [currentSlide, setCurrentSlide] = useState(0)
+    const [ setCurrentSlide] = useState(0)
     const [selectedCategory, setSelectedCategory] = useState(t("Big Brands"))
     const [internshipData, setInternshipData] = useState([])
 

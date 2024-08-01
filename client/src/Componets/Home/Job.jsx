@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Job() {
-    const { t, i18n } = useTranslation();
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const { t } = useTranslation();
+    const [ setCurrentSlide] = useState(0);
     const [selectedCategory, setSelectedCategory] = useState("Big Brands");
     const [JobData, setJobData] = useState([]);
 

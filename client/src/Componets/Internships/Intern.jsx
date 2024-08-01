@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Intern() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [serachCategory, setSearchCategory] = useState("");
   const [searchLoaction, setSearchLocation] = useState("");
   const [filterInternship, setFilterInternship] = useState([]);
@@ -58,7 +58,7 @@ function Intern() {
 
   useEffect(() => {
     filterInterships(serachCategory, searchLoaction);
-  }, [searchLoaction, serachCategory]);
+  });
 
   return (
     <>

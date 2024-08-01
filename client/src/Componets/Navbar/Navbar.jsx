@@ -89,7 +89,7 @@ const checkAccessTime = () => {
 // Call this function on component mount or when needed
 useEffect(() => {
   checkAccessTime();
-},[]);
+});
 
 
 

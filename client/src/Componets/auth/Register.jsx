@@ -7,9 +7,9 @@ import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
 
 function Register() {
-  const { t, i18n } = useTranslation();
-  const [isStudent, setStudent] = useState(true);
-  const [isDivVisible, setDivVisible] = useState(false);
+  const { t } = useTranslation();
+  const [ setStudent] = useState(true);
+  const [ setDivVisible] = useState(false);
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
