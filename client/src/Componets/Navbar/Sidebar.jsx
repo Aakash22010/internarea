@@ -188,7 +188,7 @@ function Sidebar({ setDivVisibleForLogin }) {
           // Obtain the IP address from a server-side function if needed
   
           // Send system info to backend
-          await axios.post('http://localhost:3000/api/store-login-info', {
+          await axios.post('https://internarea-p1go.onrender.com/api/store-login-info', {
             email: res.user.email, // Include user email or other identifier
             browser,
             os,

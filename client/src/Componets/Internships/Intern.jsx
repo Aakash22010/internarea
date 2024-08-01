@@ -24,7 +24,7 @@ function Intern() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/internship`);
+        const response = await axios.get(`https://internarea-p1go.onrender.com/api/internship`);
         setInternData(response.data);
       } catch (error) {
         console.log(error);

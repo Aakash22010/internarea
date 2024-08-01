@@ -21,7 +21,7 @@ function JobDetail() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`http://localhost:3000/api/job/${id}`)
+      const response = await axios.get(`https://internarea-p1go.onrender.com/api/job/${id}`)
       const { company, category } = response.data
       setCompany(company)
       setCategory(category)
@@ -50,7 +50,7 @@ function JobDetail() {
         user: user,
         Application: id
       }
-      await axios.post("http://localhost:3000/api/application", bodyJson)
+      await axios.post("https://internarea-p1go.onrender.com/api/application", bodyJson)
         .then((res) => {
         }).catch((err) => {
           alert(t('Error occurred'))

@@ -52,7 +52,7 @@ function Postinternships() {
           AdditionalInfo:additionalInfo,
   
       }
-  axios.post("http://localhost:3000/api/internship",bodyJosn).then((res)=>{
+  axios.post("https://internarea-p1go.onrender.com/api/internship",bodyJosn).then((res)=>{
       console.log(res.data)
     }).catch((err)=>
     console.log(err))

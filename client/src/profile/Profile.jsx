@@ -11,7 +11,7 @@ function Profile() {
     useEffect(() => {
         const fetchLoginHistory = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/login-history/${user.email}`);
+                const response = await axios.get(`https://internarea-p1go.onrender.com/api/login-history/${user.email}`);
                 setLoginHistory(response.data);
             } catch (error) {
                 console.error('Error fetching login history:', error);

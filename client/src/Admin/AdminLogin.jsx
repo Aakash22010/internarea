@@ -16,7 +16,7 @@ else{
         username:username,
         password:password
     }
-    axios.post("http://localhost:3000/api/admin/adminLogin",bodyjson).then((res)=>{
+    axios.post("https://internarea-p1go.onrender.com/api/admin/adminLogin",bodyjson).then((res)=>{
         console.log(res,"data is send")
         alert("success")
         navigate("/adminepanel")

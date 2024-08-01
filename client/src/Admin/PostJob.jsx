@@ -55,7 +55,7 @@ function PostJob() {
             additionalInfo,
         };
         
-        axios.post("http://localhost:3000/api/job", bodyJson)
+        axios.post("https://internarea-p1go.onrender.com/api/job", bodyJson)
             .then((res) => {
                 alert("Job posted successfully.");
                 navigate("/adminpanel");  // Ensure the path is correct

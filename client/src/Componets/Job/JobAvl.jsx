@@ -16,7 +16,7 @@ function JobAvl() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/job`);
+        const response = await axios.get(`https://internarea-p1go.onrender.com/api/job`);
         setJobData(response.data);
       } catch (error) {
         console.log(error);

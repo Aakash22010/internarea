@@ -27,7 +27,7 @@ function InternDeatil() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`http://localhost:3000/api/internship/${id}`);
+      const response = await axios.get(`https://internarea-p1go.onrender.com/api/internship/${id}`);
       setData(response.data);
 
       const { company, category } = response.data;
@@ -50,7 +50,7 @@ function InternDeatil() {
         Application: id
       };
 
-      await axios.post("http://localhost:3000/api/application", bodyJson).then((res) => {
+      await axios.post("https://internarea-p1go.onrender.com/api/application", bodyJson).then((res) => {
         // Handle success
       }).catch((err) => {
         alert(t('errorOccurred')); // Use translation
