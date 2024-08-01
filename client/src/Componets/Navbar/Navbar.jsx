@@ -225,7 +225,7 @@ const handleLanguageChange = (language) => {
             setShowPopup(true);
             setStep(1);
           } else if (browser === 'Edge') {
-            setSelectedLanguage(selectedLanguage);
+            // setSelectedLanguage(selectedLanguage);
             setShowPopup(false);
           }
         })
