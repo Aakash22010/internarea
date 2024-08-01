@@ -27,7 +27,7 @@ function Sidebar({ setDivVisibleForLogin }) {
 
   const handleEmailSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/send-otp', { email });
+      const response = await axios.post('https://internarea-p1go.onrender.com/send-otp', { email });
       if (response.data.success) {
         setMessage('OTP has been sent to your email');
         setStep(2);
@@ -45,7 +45,7 @@ function Sidebar({ setDivVisibleForLogin }) {
     
   const handleOtpSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/verify-otp', { email, otp, language: selectedLanguage });
+      const response = await axios.post('https://internarea-p1go.onrender.com/verify-otp', { email, otp, language: selectedLanguage });
       if (response.data.success) {
         // Handle language-specific settings
         switch (selectedLanguage) {
